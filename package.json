@@ -1,0 +1,49 @@
+{
+  "name": "create-greasify",
+  "description": "Create a greasify userscript project.",
+  "version": "0.0.0",
+  "type": "module",
+  "bin": {
+    "create-greasify": "./dist/bin.js"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "keywords": [
+    "cli",
+    "create",
+    "vite",
+    "userscript",
+    "templates"
+  ],
+  "scripts": {
+    "start": "pnpm build && node dist/bin.js",
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write **/*.{js,ts,tsx,json}",
+    "create-greasify": "pnpm build && node dist/bin.js"
+  },
+  "devDependencies": {
+    "@crashmax/prettier-config": "5.0.1",
+    "@crashmax/tsconfig": "2.1.0",
+    "@octokit/types": "12.4.0",
+    "@types/adm-zip": "0.5.5",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "20.10.4",
+    "@types/prompts": "^2.4.9",
+    "tsup": "8.0.1",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "3.3.0",
+    "@types/yargs": "17.0.32",
+    "adm-zip": "0.5.10",
+    "decamelize": "6.0.0",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "yargs": "17.7.2"
+  }
+}
