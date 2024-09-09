@@ -67,5 +67,5 @@ export function pkgFromUserAgent(userAgent: string | undefined) {
 }
 
 export function throwCancel() {
-  throw new Error(red('×') + ' Operation cancelled')
+  throw new Error(red('✖') + ' Operation cancelled')
 }

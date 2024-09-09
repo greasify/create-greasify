@@ -21,23 +21,6 @@ export const FRAMEWORKS: Framework[] = [
     ]
   },
   {
-    name: 'solid',
-    display: 'Solid',
-    color: cyan,
-    variants: [
-      {
-        name: 'solid',
-        display: 'JavaScript',
-        color: yellow
-      },
-      {
-        name: 'solid-ts',
-        display: 'TypeScript',
-        color: blue
-      }
-    ]
-  },
-  {
     name: 'reatom',
     display: 'Reatom',
     color: magenta,
@@ -55,34 +38,17 @@ export const FRAMEWORKS: Framework[] = [
     ]
   },
   {
-    name: 'vue',
-    display: 'Vue',
-    color: green,
+    name: 'solid',
+    display: 'Solid',
+    color: cyan,
     variants: [
       {
-        name: 'vue',
+        name: 'solid',
         display: 'JavaScript',
         color: yellow
       },
       {
-        name: 'vue-ts',
-        display: 'TypeScript',
-        color: blue
-      }
-    ]
-  },
-  {
-    name: 'react',
-    display: 'React',
-    color: lightCyan,
-    variants: [
-      {
-        name: 'react',
-        display: 'JavaScript',
-        color: yellow
-      },
-      {
-        name: 'react-ts',
+        name: 'solid-ts',
         display: 'TypeScript',
         color: blue
       }
@@ -100,6 +66,23 @@ export const FRAMEWORKS: Framework[] = [
       },
       {
         name: 'preact-ts',
+        display: 'TypeScript',
+        color: blue
+      }
+    ]
+  },
+  {
+    name: 'react',
+    display: 'React',
+    color: lightCyan,
+    variants: [
+      {
+        name: 'react',
+        display: 'JavaScript',
+        color: yellow
+      },
+      {
+        name: 'react-ts',
         display: 'TypeScript',
         color: blue
       }
