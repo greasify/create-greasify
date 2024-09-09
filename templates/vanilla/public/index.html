@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/svg+xml" href="greasify.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vanilla-ts</title>
+    <title>vanilla</title>
   </head>
   <body>
     <div id="app">
       <div>
         <img src="greasify.svg" class="logo" alt="Greasify logo" />
-        <img src="typescript.svg" class="logo ts" alt="TypeScript logo" />
-        <h1>Greasify + TypeScript</h1>
+        <img src="javascript.svg" class="logo js" alt="JavaScript logo" />
+        <h1>Greasify + JavaScript</h1>
         <div class="card">
           <button id="install">Install this script</button>
         </div>
@@ -23,9 +23,9 @@
       const install = document.querySelector('#install')
       install.addEventListener('click', () => {
         if (location.hostname === 'localhost') {
-          location.href = 'vanilla-ts.proxy.user.js'
+          location.href = 'vanilla.proxy.user.js'
         } else {
-          location.href = 'vanilla-ts.user.js'
+          location.href = 'vanilla.user.js'
         }
       })
     </script>

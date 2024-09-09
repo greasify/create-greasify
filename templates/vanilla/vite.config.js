@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     Userscript({
       fileName: name,
-      entry: 'src/index.ts',
+      entry: 'src/index.js',
       header: {
         name,
         version,
