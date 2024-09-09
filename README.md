@@ -20,4 +20,3 @@ pnpm create greasify
 | [reatom-ts](/templates/reatom-ts)   | [reatom](/templates/reatom)   |
 | [solid-ts](/templates/solid-ts)     | [solid](/templates/solid)     |
 | [preact-ts](/templates/preact-ts)   | [preact](/templates/preact)   |
-| [react-ts](/templates/react-ts)     | [react](/templates/react)     |
