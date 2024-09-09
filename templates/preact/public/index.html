@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/svg+xml" href="greasify.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>solid</title>
+    <title>preact</title>
   </head>
   <body>
     <div id="app">
       <div>
         <img src="greasify.svg" class="logo" alt="Greasify logo" />
-        <img src="solid.svg" class="logo solid" alt="Solid logo" />
-        <h1>Greasify + Solid</h1>
+        <img src="preact.svg" class="logo preact" alt="Preact logo" />
+        <h1>Greasify + Preact</h1>
         <div class="card">
           <button id="install">Install this script</button>
           <div id="counter"></div>
@@ -24,9 +24,9 @@
       const install = document.querySelector('#install')
       install.addEventListener('click', () => {
         if (location.hostname === 'localhost') {
-          location.href = 'solid.proxy.user.js'
+          location.href = 'preact.proxy.user.js'
         } else {
-          location.href = 'solid.user.js'
+          location.href = 'preact.user.js'
         }
       })
     </script>
