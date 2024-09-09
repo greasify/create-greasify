@@ -43,6 +43,56 @@ importers:
         specifier: 5.5.4
         version: 5.5.4
 
+  templates/reatom-jsx:
+    dependencies:
+      '@reatom/framework':
+        specifier: 3.4.52
+        version: 3.4.52
+      '@reatom/jsx':
+        specifier: 3.13.1
+        version: 3.13.1
+    devDependencies:
+      '@crashmax/prettier-config':
+        specifier: 5.0.2
+        version: 5.0.2(@ianvs/prettier-plugin-sort-imports@4.3.1(prettier@3.3.3))(prettier-plugin-multiline-arrays@3.0.6(prettier@3.3.3))(prettier@3.3.3)
+      sass:
+        specifier: 1.78.0
+        version: 1.78.0
+      vite:
+        specifier: 5.4.3
+        version: 5.4.3(@types/node@22.5.4)(sass@1.78.0)
+      vite-userscript-plugin:
+        specifier: 1.11.0
+        version: 1.11.0(vite@5.4.3(@types/node@22.5.4)(sass@1.78.0))
+
+  templates/reatom-jsx-ts:
+    dependencies:
+      '@reatom/framework':
+        specifier: 3.4.52
+        version: 3.4.52
+      '@reatom/jsx':
+        specifier: 3.13.1
+        version: 3.13.1
+    devDependencies:
+      '@crashmax/prettier-config':
+        specifier: 5.0.2
+        version: 5.0.2(@ianvs/prettier-plugin-sort-imports@4.3.1(prettier@3.3.3))(prettier-plugin-multiline-arrays@3.0.6(prettier@3.3.3))(prettier@3.3.3)
+      '@crashmax/tsconfig':
+        specifier: 2.2.0
+        version: 2.2.0
+      sass:
+        specifier: 1.78.0
+        version: 1.78.0
+      typescript:
+        specifier: 5.5.4
+        version: 5.5.4
+      vite:
+        specifier: 5.4.3
+        version: 5.4.3(@types/node@22.5.4)(sass@1.78.0)
+      vite-userscript-plugin:
+        specifier: 1.11.0
+        version: 1.11.0(vite@5.4.3(@types/node@22.5.4)(sass@1.78.0))
+
   templates/vanilla:
     dependencies:
       '@zero-dependency/dom':
@@ -536,6 +586,36 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@reatom/async@3.16.1':
+    resolution: {integrity: sha512-A5g0VYnigqeskV+IJikQXypQrzQZMtjLyokOvxvIG0dxL8D1nvKhNDGAgoZRn4NtGEQfu4D+OTVmdQEMS6YL5A==}
+
+  '@reatom/core@3.9.0':
+    resolution: {integrity: sha512-ExlVfQ0rAkxnwWgbxWeNG4S5eNeTFpNlbFZMQHJ5MI+It7aYkqOie3Eh0ssk6AuvEPxzWM8+glsaZFQ6fPmTow==}
+
+  '@reatom/effects@3.9.0':
+    resolution: {integrity: sha512-jM2Kjvr3WvtVeWsFpY8fz6muxSyIn9D1+7nl6E2ojHwVVSEzMyk58ROUEmuv5hMSilY/2Ah3u7qhuP0ZRZ2SYw==}
+
+  '@reatom/framework@3.4.52':
+    resolution: {integrity: sha512-KBhYRsw7AEDjyy11Xq7igXEuIxF0UPEizLHaugYcki6TM4bNX3GeXzdoPnXUN3+jBhHB80pvHqrU2kqLM1+T6g==}
+
+  '@reatom/hooks@3.5.5':
+    resolution: {integrity: sha512-6exYUEB9MuqOaIMEaeiapar/TLx7fkrZnULBg5+gW2krhugzpDufapN6C7taiQuPS58NKLOQhVvz+ZzSQN5HbA==}
+
+  '@reatom/jsx@3.13.1':
+    resolution: {integrity: sha512-yG72tqmEM6G1im8paKOaHfQ93ck3lmE6fYQZffErVayItn/ofJTZeP35o09RxA/klIqg6fXXjlwqd53SnTGqkA==}
+
+  '@reatom/lens@3.11.4':
+    resolution: {integrity: sha512-c0mBckkxgr7HtoArmjpw9NNr5LTzdu13sdtw0JAinBz9WOCaoVMFqAbxSxeTWNzP30SUDfe56+1RoOixf+q/uQ==}
+
+  '@reatom/logger@3.8.4':
+    resolution: {integrity: sha512-MOz8Td1eZV+kU4QpkZXAdO9qFtGjqpm40crIlMNweDtOH7GgUmV2oKgOXRORQzYbeGHVMlQHG4J5iPeEQdM7KA==}
+
+  '@reatom/primitives@3.7.3':
+    resolution: {integrity: sha512-HzG2aoGzE2W410ZSqnT8hd21Xd+bNMIkN03tq7dWgZ4OAZKawVnxdeB8bHu+oA5ppxICfrY0HtPUUeQTbvxfgQ==}
+
+  '@reatom/utils@3.10.0':
+    resolution: {integrity: sha512-npRrZCb778MxGb2ukhYax5oX5swVRgTA2m69FjQhC3ROJQ9vCbSDzzXn2bAQDDpcbc/lhsStaaYtoEK/JkKP1w==}
 
   '@rollup/rollup-android-arm-eabi@4.21.2':
     resolution: {integrity: sha512-fSuPrt0ZO8uXeS+xP3b+yYTCBUd05MoSp2N/MFOgjhhUhMmchXlpTQrTpI8T+YAwAQuK7MafsCOxW7VrPMrJcg==}
@@ -1789,6 +1869,65 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@reatom/async@3.16.1':
+    dependencies:
+      '@reatom/core': 3.9.0
+      '@reatom/effects': 3.9.0
+      '@reatom/hooks': 3.5.5
+      '@reatom/primitives': 3.7.3
+      '@reatom/utils': 3.10.0
+
+  '@reatom/core@3.9.0': {}
+
+  '@reatom/effects@3.9.0':
+    dependencies:
+      '@reatom/core': 3.9.0
+      '@reatom/utils': 3.10.0
+
+  '@reatom/framework@3.4.52':
+    dependencies:
+      '@reatom/async': 3.16.1
+      '@reatom/core': 3.9.0
+      '@reatom/effects': 3.9.0
+      '@reatom/hooks': 3.5.5
+      '@reatom/lens': 3.11.4
+      '@reatom/logger': 3.8.4
+      '@reatom/primitives': 3.7.3
+      '@reatom/utils': 3.10.0
+
+  '@reatom/hooks@3.5.5':
+    dependencies:
+      '@reatom/core': 3.9.0
+      '@reatom/effects': 3.9.0
+      '@reatom/utils': 3.10.0
+
+  '@reatom/jsx@3.13.1':
+    dependencies:
+      '@reatom/core': 3.9.0
+      '@reatom/primitives': 3.7.3
+      '@reatom/utils': 3.10.0
+      csstype: 3.1.2
+
+  '@reatom/lens@3.11.4':
+    dependencies:
+      '@reatom/core': 3.9.0
+      '@reatom/effects': 3.9.0
+      '@reatom/hooks': 3.5.5
+      '@reatom/primitives': 3.7.3
+      '@reatom/utils': 3.10.0
+
+  '@reatom/logger@3.8.4':
+    dependencies:
+      '@reatom/core': 3.9.0
+      '@reatom/utils': 3.10.0
+
+  '@reatom/primitives@3.7.3':
+    dependencies:
+      '@reatom/core': 3.9.0
+      '@reatom/utils': 3.10.0
+
+  '@reatom/utils@3.10.0': {}
 
   '@rollup/rollup-android-arm-eabi@4.21.2':
     optional: true

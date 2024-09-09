@@ -23,8 +23,10 @@
     "start": "pnpm build && node dist/bin.js",
     "dev": "tsup --watch",
     "build": "tsup",
-    "type-check": "tsc --noEmit",
+    "build:templates": "pnpm build && pnpm -r --filter=./templates/* run build",
     "format": "prettier --write src",
+    "format:templates": "pnpm -r --filter=./templates/* run format",
+    "type-check": "tsc --noEmit",
     "create-greasify": "pnpm build && node dist/bin.js"
   },
   "devDependencies": {

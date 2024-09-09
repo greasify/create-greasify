@@ -18,6 +18,5 @@ export function setupCounter(target: HTMLElement | null) {
 
   setCounter(count)
   target.append(counter)
-
   ;[].at(-1)
 }
