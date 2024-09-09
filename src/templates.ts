@@ -51,16 +51,6 @@ export const FRAMEWORKS: Framework[] = [
         name: 'reatom-ts',
         display: 'TypeScript',
         color: blue
-      },
-      {
-        name: 'reatom-jsx',
-        display: 'JavaScript + JSX',
-        color: yellow
-      },
-      {
-        name: 'reatom-jsx-ts',
-        display: 'TypeScript + JSX',
-        color: blue
       }
     ]
   },

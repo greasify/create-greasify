@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/svg+xml" href="greasify.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>reatom-jsx-ts</title>
+    <title>reatom-ts</title>
   </head>
   <body>
     <div id="app">
       <div>
         <img src="greasify.svg" class="logo" alt="Greasify logo" />
         <img src="reatom.svg" class="logo reatom" alt="Reatom logo" />
-        <h1>Greasify + Reatom + TSX</h1>
+        <h1>Greasify + Reatom</h1>
         <div class="card">
           <button id="install">Install this script</button>
         </div>
@@ -23,9 +23,9 @@
       const install = document.querySelector('#install')
       install.addEventListener('click', () => {
         if (location.hostname === 'localhost') {
-          location.href = 'reatom-jsx-ts.proxy.user.js'
+          location.href = 'reatom-ts.proxy.user.js'
         } else {
-          location.href = 'reatom-jsx-ts.user.js'
+          location.href = 'reatom-ts.user.js'
         }
       })
     </script>

@@ -43,7 +43,7 @@ importers:
         specifier: 5.5.4
         version: 5.5.4
 
-  templates/reatom-jsx:
+  templates/reatom:
     dependencies:
       '@reatom/framework':
         specifier: 3.4.52
@@ -65,7 +65,7 @@ importers:
         specifier: 1.11.0
         version: 1.11.0(vite@5.4.3(@types/node@22.5.4)(sass@1.78.0))
 
-  templates/reatom-jsx-ts:
+  templates/reatom-ts:
     dependencies:
       '@reatom/framework':
         specifier: 3.4.52

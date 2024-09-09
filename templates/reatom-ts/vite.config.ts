@@ -11,7 +11,7 @@ export default defineConfig({
   },
   plugins: [
     Userscript({
-      fileName: 'reatom-jsx-ts',
+      fileName: 'reatom-ts',
       entry: 'src/index.tsx',
       header: {
         name,

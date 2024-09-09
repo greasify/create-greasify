@@ -18,7 +18,6 @@ pnpm create greasify
 | ----------------------------------------- | ----------------------------------- |
 | [vanilla-ts](/templates/vanilla-ts)       | [vanilla](/templates/vanilla)       |
 | [reatom-ts](/templates/reatom-ts)         | [reatom](/templates/reatom)         |
-| [reatom-jsx-ts](/templates/reatom-jsx-ts) | [reatom-jsx](/templates/reatom-jsx) |
 | [vue-ts](/templates/vue-ts)               | [vue](/templates/vue)               |
 | [solid-ts](/templates/solid-ts)           | [solid](/templates/template-solid)  |
 | [preact-ts](/templates/preact-ts)         | [preact](/templates/preact)         |
