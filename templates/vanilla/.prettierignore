@@ -1,9 +1,0 @@
-node_modules
-dist
-.github
-.vscode
-*.log*
-*.log
-*.lock
-*.md
-.*ignore

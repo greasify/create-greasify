@@ -6,7 +6,7 @@ import { license, name, version } from './package.json'
 export default defineConfig({
   plugins: [
     Userscript({
-      fileName: name,
+      fileName: 'vanilla',
       entry: 'src/index.js',
       header: {
         name,
