@@ -1,0 +1,13 @@
+{
+  "extends": "@crashmax/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "paths": {
+      "react": ["./node_modules/preact/compat/"],
+      "react-dom": ["./node_modules/preact/compat/"]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+  },
+  "include": ["src"]
+}
