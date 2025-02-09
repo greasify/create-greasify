@@ -4,9 +4,8 @@ import fs from 'node:fs'
 import path from 'node:path'
 import url from 'node:url'
 import { reset } from 'kolorist'
-import minimist from 'minimist'
+import { parseArgs } from 'node:util'
 import prompts from 'prompts'
-
 import {
   copyFiles,
   emptyDir,
@@ -20,19 +19,34 @@ import {
 import { FRAMEWORKS, TEMPLATES } from './templates.js'
 import type { Framework } from './types.js'
 
-const argv = minimist<{
-  t?: string
-  template?: string
-}>(process.argv.slice(2), { string: ['_'] })
+const { values, positionals } = parseArgs({
+  args: process.argv.slice(2),
+  options: {
+    t: {
+      type: 'string',
+      short: 't',
+    },
+    template: {
+      type: 'string',
+    },
+  },
+  allowPositionals: true
+});
+
+const argv = {
+  ...values,
+  _: positionals,
+};
+
 const cwd = process.cwd()
 
-const defaultTargetDir = 'vite-greasify-template'
+const DEFAULT_TARGET_DIR = 'vite-greasify-template'
 
 async function init() {
   const argTargetDir = formatTargetDir(argv._[0])
   const argTemplate = argv.template || argv.t
 
-  let targetDir = argTargetDir || defaultTargetDir
+  let targetDir = argTargetDir || DEFAULT_TARGET_DIR
   const getProjectName = () =>
     targetDir === '.' ? path.basename(path.resolve()) : targetDir
 
@@ -47,9 +61,9 @@ async function init() {
           type: argTargetDir ? null : 'text',
           name: 'projectName',
           message: reset('Project name:'),
-          initial: defaultTargetDir,
+          initial: DEFAULT_TARGET_DIR,
           onState: (state) => {
-            targetDir = formatTargetDir(state.value) || defaultTargetDir
+            targetDir = formatTargetDir(state.value) || DEFAULT_TARGET_DIR
           }
         },
         {

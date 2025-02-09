@@ -11,9 +11,6 @@ importers:
       kolorist:
         specifier: 1.8.0
         version: 1.8.0
-      minimist:
-        specifier: 1.2.8
-        version: 1.2.8
       prompts:
         specifier: 2.4.2
         version: 2.4.2
@@ -24,9 +21,6 @@ importers:
       '@crashmax/tsconfig':
         specifier: 2.2.0
         version: 2.2.0
-      '@types/minimist':
-        specifier: 1.2.5
-        version: 1.2.5
       '@types/node':
         specifier: 22.13.1
         version: 22.13.1
@@ -719,9 +713,6 @@ packages:
   '@types/gensync@1.0.4':
     resolution: {integrity: sha512-C3YYeRQWp2fmq9OryX+FoDy8nXS6scQ7dPptD8LnFDAUNcKWJjXQKDNJD3HVm+kOUsXhTOkpi69vI4EuAr95bA==}
 
-  '@types/minimist@1.2.5':
-    resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
-
   '@types/node@22.13.1':
     resolution: {integrity: sha512-jK8uzQlrvXqEU91UxiK5J7pKHyzgnI1Qnl0QDHIgVGuolJhRb9EEl28Cj9b3rGR8B2lhFCtvIm5os8lFnO/1Ew==}
 
@@ -1106,9 +1097,6 @@ packages:
   minimatch@9.0.5:
     resolution: {integrity: sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==}
     engines: {node: '>=16 || 14 >=14.17'}
-
-  minimist@1.2.8:
-    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
   minipass@7.1.2:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
@@ -2126,8 +2114,6 @@ snapshots:
 
   '@types/gensync@1.0.4': {}
 
-  '@types/minimist@1.2.5': {}
-
   '@types/node@22.13.1':
     dependencies:
       undici-types: 6.20.0
@@ -2485,8 +2471,6 @@ snapshots:
   minimatch@9.0.5:
     dependencies:
       brace-expansion: 2.0.1
-
-  minimist@1.2.8: {}
 
   minipass@7.1.2: {}
 
