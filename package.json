@@ -32,12 +32,11 @@
   "devDependencies": {
     "@crashmax/prettier-config": "5.0.2",
     "@crashmax/tsconfig": "2.2.0",
-    "@octokit/types": "13.5.0",
     "@types/minimist": "1.2.5",
-    "@types/node": "20.10.4",
+    "@types/node": "22.13.1",
     "@types/prompts": "2.4.9",
-    "tsup": "8.2.4",
-    "typescript": "5.5.4"
+    "tsup": "8.3.6",
+    "typescript": "5.7.3"
   },
   "dependencies": {
     "kolorist": "1.8.0",
