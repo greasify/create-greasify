@@ -12,6 +12,7 @@
   "files": [
     "dist",
     "templates",
+    "templates/base/.gitignore",
     "!templates/*/node_modules",
     "!templates/*/dist"
   ],
