@@ -13,13 +13,13 @@
   "devDependencies": {
     "@crashmax/prettier-config": "5.0.2",
     "@crashmax/tsconfig": "2.2.0",
-    "sass": "1.78.0",
-    "typescript": "5.5.4",
-    "vite": "5.4.3",
-    "vite-plugin-solid": "2.10.2",
+    "sass-embedded": "1.83.4",
+    "typescript": "5.7.3",
+    "vite": "6.1.0",
+    "vite-plugin-solid": "2.11.1",
     "vite-userscript-plugin": "1.11.0"
   },
   "dependencies": {
-    "solid-js": "1.8.22"
+    "solid-js": "1.9.4"
   }
 }

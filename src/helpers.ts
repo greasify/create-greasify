@@ -1,17 +1,24 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { red } from 'kolorist'
+import { styleText } from 'node:util'
+
+export const red = (text: unknown) => styleText('red', `${text}`)
+export const blue = (text: unknown) => styleText('blue', `${text}`)
+export const cyan = (text: unknown) => styleText('cyan', `${text}`)
+export const magenta = (text: unknown) => styleText('magenta', `${text}`)
+export const yellow = (text: unknown) => styleText('yellow', `${text}`)
+export const reset = (text: unknown) => styleText('reset', `${text}`)
 
 export function formatTargetDir(targetDir: string | undefined) {
   return targetDir?.trim().replace(/\/+$/g, '')
 }
 
-export function copyFile(src: string, dest: string) {
-  const stat = fs.statSync(src)
+export function copyFiles(from: string, to: string) {
+  const stat = fs.statSync(from)
   if (stat.isDirectory()) {
-    copyDir(src, dest)
+    copyDir(from, to)
   } else {
-    fs.copyFileSync(src, dest)
+    fs.copyFileSync(from, to)
   }
 }
 
@@ -36,7 +43,7 @@ export function copyDir(srcDir: string, destDir: string) {
   for (const file of fs.readdirSync(srcDir)) {
     const srcFile = path.resolve(srcDir, file)
     const destFile = path.resolve(destDir, file)
-    copyFile(srcFile, destFile)
+    copyFiles(srcFile, destFile)
   }
 }
 
@@ -67,5 +74,5 @@ export function pkgFromUserAgent(userAgent: string | undefined) {
 }
 
 export function throwCancel() {
-  throw new Error(red('✖') + ' Operation cancelled')
+  throw new Error(red('×') + ' Operation cancelled')
 }

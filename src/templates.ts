@@ -1,5 +1,4 @@
-import { blue, cyan, green, lightCyan, magenta, yellow } from 'kolorist'
-
+import { blue, cyan, magenta, yellow } from './helpers.js'
 import type { Framework } from './types.js'
 
 export const FRAMEWORKS: Framework[] = [
@@ -66,23 +65,6 @@ export const FRAMEWORKS: Framework[] = [
       },
       {
         name: 'preact-ts',
-        display: 'TypeScript',
-        color: blue
-      }
-    ]
-  },
-  {
-    name: 'react',
-    display: 'React',
-    color: lightCyan,
-    variants: [
-      {
-        name: 'react',
-        display: 'JavaScript',
-        color: yellow
-      },
-      {
-        name: 'react-ts',
         display: 'TypeScript',
         color: blue
       }

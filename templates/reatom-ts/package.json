@@ -13,13 +13,13 @@
   "devDependencies": {
     "@crashmax/prettier-config": "5.0.2",
     "@crashmax/tsconfig": "2.2.0",
-    "sass": "1.78.0",
-    "typescript": "5.5.4",
-    "vite": "5.4.3",
+    "sass-embedded": "1.83.4",
+    "typescript": "5.7.3",
+    "vite": "6.1.0",
     "vite-userscript-plugin": "1.11.0"
   },
   "dependencies": {
-    "@reatom/framework": "3.4.52",
-    "@reatom/jsx": "3.13.1"
+    "@reatom/framework": "3.4.58",
+    "@reatom/jsx": "3.16.1"
   }
 }
