@@ -8,7 +8,7 @@ import minimist from 'minimist'
 import prompts from 'prompts'
 
 import {
-  copyFile,
+  copyFiles,
   emptyDir,
   formatTargetDir,
   isEmptyPath,
@@ -138,7 +138,15 @@ async function init() {
 
   console.log(`\nScaffolding project in ${root}`)
 
-  const templateDir = path.resolve(
+  const baseTemplateDir = path.resolve(
+    url.fileURLToPath(import.meta.url),
+    '..',
+    '..',
+    'templates',
+    'base'
+  )
+
+  const selectedTemplateDir = path.resolve(
     url.fileURLToPath(import.meta.url),
     '..',
     '..',
@@ -151,21 +159,24 @@ async function init() {
     if (content) {
       fs.writeFileSync(targetPath, content)
     } else {
-      copyFile(path.join(templateDir, file), targetPath)
+      copyFiles(path.join(selectedTemplateDir, file), targetPath)
     }
   }
 
-  const files = fs.readdirSync(templateDir)
+  // copy files from templates/base
+  copyFiles(baseTemplateDir, targetDir)
+
+
+  // write package.json
+  const files = fs.readdirSync(selectedTemplateDir)
   for (const file of files.filter((file) => file !== 'package.json')) {
     write(file)
   }
 
   const pkg = JSON.parse(
-    fs.readFileSync(path.join(templateDir, `package.json`), 'utf-8')
+    fs.readFileSync(path.join(selectedTemplateDir, `package.json`), 'utf-8')
   )
-
   pkg.name = packageName || getProjectName()
-
   write('package.json', JSON.stringify(pkg, null, 2))
 
   console.log(`\nDone. Now run:\n`)

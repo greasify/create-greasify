@@ -6,12 +6,12 @@ export function formatTargetDir(targetDir: string | undefined) {
   return targetDir?.trim().replace(/\/+$/g, '')
 }
 
-export function copyFile(src: string, dest: string) {
-  const stat = fs.statSync(src)
+export function copyFiles(from: string, to: string) {
+  const stat = fs.statSync(from)
   if (stat.isDirectory()) {
-    copyDir(src, dest)
+    copyDir(from, to)
   } else {
-    fs.copyFileSync(src, dest)
+    fs.copyFileSync(from, to)
   }
 }
 
@@ -36,7 +36,7 @@ export function copyDir(srcDir: string, destDir: string) {
   for (const file of fs.readdirSync(srcDir)) {
     const srcFile = path.resolve(srcDir, file)
     const destFile = path.resolve(destDir, file)
-    copyFile(srcFile, destFile)
+    copyFiles(srcFile, destFile)
   }
 }
 
