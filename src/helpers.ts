@@ -1,6 +1,13 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { red } from 'kolorist'
+import { styleText } from 'node:util'
+
+export const red = (text: unknown) => styleText('red', `${text}`)
+export const blue = (text: unknown) => styleText('blue', `${text}`)
+export const cyan = (text: unknown) => styleText('cyan', `${text}`)
+export const magenta = (text: unknown) => styleText('magenta', `${text}`)
+export const yellow = (text: unknown) => styleText('yellow', `${text}`)
+export const reset = (text: unknown) => styleText('reset', `${text}`)
 
 export function formatTargetDir(targetDir: string | undefined) {
   return targetDir?.trim().replace(/\/+$/g, '')
@@ -67,5 +74,5 @@ export function pkgFromUserAgent(userAgent: string | undefined) {
 }
 
 export function throwCancel() {
-  throw new Error(red('✖') + ' Operation cancelled')
+  throw new Error(red('×') + ' Operation cancelled')
 }

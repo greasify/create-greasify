@@ -3,9 +3,9 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import url from 'node:url'
-import { reset } from 'kolorist'
 import { parseArgs } from 'node:util'
 import prompts from 'prompts'
+
 import {
   copyFiles,
   emptyDir,
@@ -13,6 +13,7 @@ import {
   isEmptyPath,
   isValidPackageName,
   pkgFromUserAgent,
+  reset,
   throwCancel,
   toValidPackageName
 } from './helpers.js'
@@ -24,19 +25,19 @@ const { values, positionals } = parseArgs({
   options: {
     t: {
       type: 'string',
-      short: 't',
+      short: 't'
     },
     template: {
-      type: 'string',
-    },
+      type: 'string'
+    }
   },
   allowPositionals: true
-});
+})
 
 const argv = {
   ...values,
-  _: positionals,
-};
+  _: positionals
+}
 
 const cwd = process.cwd()
 
@@ -179,7 +180,6 @@ async function init() {
 
   // copy files from templates/base
   copyFiles(baseTemplateDir, targetDir)
-
 
   // write package.json
   const files = fs.readdirSync(selectedTemplateDir)

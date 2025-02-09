@@ -1,5 +1,4 @@
-import { blue, cyan, magenta, yellow } from 'kolorist'
-
+import { blue, cyan, magenta, yellow } from './helpers.js'
 import type { Framework } from './types.js'
 
 export const FRAMEWORKS: Framework[] = [

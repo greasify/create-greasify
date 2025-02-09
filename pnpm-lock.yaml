@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      kolorist:
-        specifier: 1.8.0
-        version: 1.8.0
       prompts:
         specifier: 2.4.2
         version: 2.4.2
