@@ -1,15 +1,15 @@
 ## Scaffolding your first userscript project
 
 ```sh
-npm create greasify
+npm create greasify@latest
 ```
 
 ```sh
-yarn create greasify
+yarn create greasify@latest
 ```
 
 ```sh
-pnpm create greasify
+pnpm create greasify@latest
 ```
 
 ## The supported template presets are
